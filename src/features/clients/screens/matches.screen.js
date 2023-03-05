@@ -1,17 +1,17 @@
 import React from "react";
 import { Searchbar } from "react-native-paper";
 import { FlatList } from "react-native";
-import { CilentInfoCard } from "../components/cllient-info-card.component";
+import { CilentInfoCard } from "../components/client-info-card.component";
 import styled from "styled-components";
 import { SafeArea } from "../../../components/utility/safe-area.component";
 
 const SearchContainer = styled.View`
-  padding: 16px;
+  padding: 10px;
 `;
 
 const CilentList = styled(FlatList).attrs({
   contentContainerStyle: {
-    padding: 16,
+    padding: 10,
   },
 })``;
 

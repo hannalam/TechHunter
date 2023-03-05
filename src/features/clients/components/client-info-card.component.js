@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { Text, Image, View } from "react-native";
 import { Card, List } from "react-native-paper";
+import { Favourite } from "../../../services/favourites/favourite.component";
 
 const CilentCard = styled(Card)`
   background-color: white;
@@ -31,7 +32,7 @@ export const CilentInfoCard = ({ client = {} }) => {
     photo = ["https://xsgames.co/randomusers/assets/avatars/male/9.jpg"],
     companyName = "Amazon",
     chatRoom = "https://img.icons8.com/material-outlined/24/null/filled-chat.png",
-    bookMark = "https://img.icons8.com/material-outlined/24/null/bookmark-ribbon--v1.png",
+    //bookMark = "https://img.icons8.com/material-outlined/24/null/bookmark-ribbon--v1.png",
     submitForApproval = "https://img.icons8.com/material-outlined/24/null/submit-for-approval.png",
   } = client;
 
@@ -40,6 +41,7 @@ export const CilentInfoCard = ({ client = {} }) => {
       <ListRow>
         <>
           <Title> {name} </Title>
+          <Favourite client={client} />
           <Image
             style={{ width: 35, height: 35 }}
             variant="image"
@@ -50,14 +52,6 @@ export const CilentInfoCard = ({ client = {} }) => {
           <View style={{ paddingLeft: 10 }} />
           <CompanyName>{companyName}</CompanyName>
           <View style={{ paddingLeft: 20 }} />
-          <Image
-            style={{ width: 30, height: 30 }}
-            variant="bookMark"
-            source={{
-              uri: bookMark,
-            }}
-          />
-          <View style={{ paddingLeft: 10 }} />
           <Image
             style={{ width: 30, height: 30 }}
             variant="submit For Approval"
