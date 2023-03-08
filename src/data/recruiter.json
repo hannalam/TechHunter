@@ -1,0 +1,8 @@
+{
+    "id": 1,
+    "name": "John Doe",
+    "email": "john.doe@company.com",
+    "company_name": "ABC Company",
+    "company_website": "https://www.abccompany.com",
+    "company_description": "ABC Company is a leading provider of IT services and solutions."
+ }
