@@ -1,0 +1,82 @@
+{"recruiters":[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@company.com",
+        "company_name": "ABC Company",
+        "company_website": "https://www.abccompany.com",
+        "company_description": "ABC Company is a leading provider of IT services and solutions."
+    },
+    {
+        "id": 2,
+        "name": "Will Smith",
+        "email": "will.smith@company.com",
+        "company_name": "ABC Company",
+        "company_website": "https://www.abccompany.com",
+        "company_description": "ABC Company is a leading provider of IT services and solutions."
+    },
+    {
+        "id": 3,
+        "name": "Pedro Sanchez",
+        "email": "pedro.shanchez@company.com",
+        "company_name": "ABC Company",
+        "company_website": "https://www.abccompany.com",
+        "company_description": "ABC Company is a leading provider of IT services and solutions."
+    },
+    {
+        "id": 4,
+        "name": "Francisco Franco",
+        "email": "francisco.franco@company.com",
+        "company_name": "ABC Company",
+        "company_website": "https://www.abccompany.com",
+        "company_description": "ABC Company is a leading provider of IT services and solutions."
+    },
+    {
+        "id": 5,
+        "name": "Marcos Juarez",
+        "email": "marcos.juarez@company.com",
+        "company_name": "ABC Company",
+        "company_website": "https://www.abccompany.com",
+        "company_description": "ABC Company is a leading provider of IT services and solutions."
+    },
+    {
+        "id": 6,
+        "name": "Milton Friedman",
+        "email": "milton.friedman@company.com",
+        "company_name": "ABC Company",
+        "company_website": "https://www.abccompany.com",
+        "company_description": "ABC Company is a leading provider of IT services and solutions."
+    },
+    {
+        "id": 7,
+        "name": "Manuel Belgrano",
+        "email": "manuel.belgrano@company.com",
+        "company_name": "ABC Company",
+        "company_website": "https://www.abccompany.com",
+        "company_description": "ABC Company is a leading provider of IT services and solutions."
+    },
+    {
+        "id": 8,
+        "name": "Machu Pichu",
+        "email": "machu.pichu@company.com",
+        "company_name": "ABC Company",
+        "company_website": "https://www.abccompany.com",
+        "company_description": "ABC Company is a leading provider of IT services and solutions."
+    },
+    {
+        "id": 9,
+        "name": "Sabastian Vettel",
+        "email": "sebastian.vettel@company.com",
+        "company_name": "ABC Company",
+        "company_website": "https://www.abccompany.com",
+        "company_description": "ABC Company is a leading provider of IT services and solutions."
+    },
+    {
+        "id": 10,
+        "name": "Michael Jackson",
+        "email": "michael.jackson@company.com",
+        "company_name": "ABC Company",
+        "company_website": "https://www.abccompany.com",
+        "company_description": "ABC Company is a leading provider of IT services and solutions."
+    }
+]}
