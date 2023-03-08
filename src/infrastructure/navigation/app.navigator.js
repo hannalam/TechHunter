@@ -7,6 +7,7 @@ import { MatchesScreen } from "../../features/clients/screens/matches.screen";
 import { SafeArea } from "../../components/utility/safe-area.component";
 import styled from "styled-components/native";
 import { List, Avatar } from "react-native-paper";
+import { ChatScreen } from "../../services/chatroom/chatscreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -18,64 +19,62 @@ const TAB_ICON = {
   Settings: "md-settings-outline",
 };
 
+const ListRow = styled(List.Section)`
+  padding-top: 5px;
+  padding-bottom: 5px;
+`;
+
 const AvatarContainer = styled.View`
   align-items: center;
 `;
 
-const Profile = () => (
+const Profiles = () => (
   <SafeArea>
-    <AvatarContainer>
-      <Avatar.Icon size={100} icon="human" backgroundColor="#2182BD" />
-      <View style={{ paddingTop: 5 }} />
-      <Text variant="label" style={{ padding: 5 }}>
-        John Jason
-      </Text>
-      <Text variant="label">Data Analyst</Text>
-    </AvatarContainer>
+    <ListRow>
+      <>
+        <AvatarContainer>
+          <Avatar.Icon size={100} icon="human" backgroundColor="#2182BD" />
+          <View style={{ paddingTop: 5 }} />
+          <Text variant="label" style={{ padding: 5 }}>
+            John Jason
+          </Text>
+          <Text variant="label">Data Analyst</Text>
+        </AvatarContainer>
 
-    <List.Section>
-      <List.Item
-        style={{ padding: 5 }}
-        title="Identity"
-        description="I graduated from University of London"
-      />
-      <List.Item
-        style={{ padding: 5 }}
-        title="Work Experience"
-        description="0-1 year (fresh grad program"
-      />
-      <List.Item style={{ padding: 5 }} title="Programming Languages" />
-      <List.Item style={{ padding: 5 }} title="Skills" />
-      <List.Item style={{ padding: 5 }} title="Education" />
-      <List.Item
-        style={{ padding: 5 }}
-        title="Favorite"
-        description="View your saved job"
-        left={(props) => <List.Icon {...props} color="black" icon="book" />}
-        //onPress={() => navigation.navigate("Favourites")}
-      />
-      <List.Item
-        style={{ padding: 5 }}
-        title="Logout"
-        left={(props) => <List.Icon {...props} color="black" icon="door" />}
-        //onPress={onLogout}
-      />
-    </List.Section>
-  </SafeArea>
-);
-const Chat = () => (
-  <SafeArea>
-    <Text>Chat</Text>
+        <List.Section>
+          <List.Item
+            style={{ padding: 5 }}
+            title="Identity"
+            description="I graduated from University of London"
+          />
+          <List.Item
+            style={{ padding: 5 }}
+            title="Work Experience"
+            description="0-1 year"
+          />
+          <List.Item style={{ padding: 5 }} title="Programming Languages" />
+          <List.Item style={{ padding: 5 }} title="Skills" />
+          <List.Item style={{ padding: 5 }} title="Education" />
+          <List.Item
+            style={{ padding: 5 }}
+            title="Favorite"
+            description="View your saved job"
+            left={(props) => <List.Icon {...props} color="black" icon="book" />}
+            //onPress={() => navigation.navigate("Favourites")}
+          />
+          <List.Item
+            style={{ padding: 5 }}
+            title="Logout"
+            left={(props) => <List.Icon {...props} color="black" icon="door" />}
+            //onPress={onLogout}
+          />
+        </List.Section>
+      </>
+    </ListRow>
   </SafeArea>
 );
 
 /*
-const Bookmark = () => (
-  <SafeArea>
-    <Text>Saved Job</Text>
-  </SafeArea>
-);
-
 const Settings = () => (
   <SafeArea>
     <Text>Settings</Text>
@@ -107,8 +106,8 @@ export const AppNavigator = () => (
       }}
     >
       <Tab.Screen name="Matches" component={MatchesScreen} />
-      <Tab.Screen name="Chat" component={Chat} />
-      <Tab.Screen name="Profile" component={Profile} />
+      <Tab.Screen name="Chat" component={ChatScreen} />
+      <Tab.Screen name="Profile" component={Profiles} />
     </Tab.Navigator>
   </NavigationContainer>
 );

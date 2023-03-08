@@ -32,7 +32,6 @@ export const CilentInfoCard = ({ client = {} }) => {
     photo = ["https://xsgames.co/randomusers/assets/avatars/male/9.jpg"],
     companyName = "Amazon",
     chatRoom = "https://img.icons8.com/material-outlined/24/null/filled-chat.png",
-    //bookMark = "https://img.icons8.com/material-outlined/24/null/bookmark-ribbon--v1.png",
     submitForApproval = "https://img.icons8.com/material-outlined/24/null/submit-for-approval.png",
   } = client;
 
