@@ -1,0 +1,138 @@
+{"chats":[
+    {
+        "id": 1,
+        "candidate_id": 1,
+        "sender": "candidate",
+        "job_id": 1,
+        "created_at": "2023-01-01 12:00:00",
+        "message": "Hello, I am interested in this job."
+    },
+    {
+        "id": 2,
+        "candidate_id": 2,
+        "sender": "candidate",
+        "job_id": 1,
+        "created_at": "2023-01-01 12:00:00",
+        "message": "Hello, I am interested in this job."
+    },    
+    {
+        "id": 3,
+        "candidate_id": 2,
+        "sender": "recruiter",
+        "job_id": 1,
+        "created_at": "2023-01-01 12:00:30",
+        "message": "Hi! Please send me your email and I will send you my calendar to coordinate and interview."
+    },    
+    {
+        "id": 4,
+        "candidate_id": 2,
+        "sender": "candidate",
+        "job_id": 1,
+        "created_at": "2023-01-01 12:01:00",
+        "message": "Thank you!"
+    },
+    {
+        "id": 5,
+        "candidate_id": 3,
+        "sender": "candidate",
+        "job_id": 2,
+        "created_at": "2023-01-01 12:00:00",
+        "message": "Hello, I am interested in this job."
+    },
+    {
+        "id": 6,
+        "candidate_id": 4,
+        "sender": "candidate",
+        "job_id": 3,
+        "created_at": "2023-01-01 12:00:00",
+        "message": "Hello, I am interested in this job."
+    },
+    {
+        "id": 7,
+        "candidate_id": 5,
+        "sender": "candidate",
+        "job_id": 4,
+        "created_at": "2023-01-01 12:00:00",
+        "message": "Hello, I am interested in this job."
+    },
+    {
+        "id": 8,
+        "candidate_id": 7,
+        "sender": "candidate",
+        "job_id": 6,
+        "created_at": "2023-01-01 12:00:00",
+        "message": "Hello, I am interested in this job."
+    },
+    {
+        "id": 9,
+        "candidate_id": 7,
+        "sender": "recruiter",
+        "job_id": 6,
+        "created_at": "2023-01-01 12:01:00",
+        "message": "Hired!"
+    },
+    {
+        "id": 10,
+        "candidate_id": 8,
+        "sender": "candidate",
+        "job_id": 7,
+        "created_at": "2023-01-01 12:01:00",
+        "message": "I am interested in this job. Are there any special requirements?"
+    },
+    {
+        "id": 11,
+        "candidate_id": 8,
+        "sender": "recruiter",
+        "job_id": 7,
+        "created_at": "2023-01-01 12:10:00",
+        "message": "There are no special requirements! We are looking for someone who is passionate about the job and is willing to learn."
+    },
+    {
+        "id": 12,
+        "candidate_id": 9,
+        "sender": "candidate",
+        "job_id": 8,
+        "created_at": "2023-01-01 12:00:00",
+        "message": "I am interested. Please send me more information"
+    },
+    {
+        "id": 13,
+        "candidate_id": 9,
+        "sender": "candidate",
+        "job_id": 9,
+        "created_at": "2023-01-01 12:00:00",
+        "message": "I am interested in this job. I can start today."
+    },
+    {
+        "id": 14,
+        "candidate_id": 10,
+        "sender": "candidate",
+        "job_id": 10,
+        "created_at": "2023-01-01 12:00:00",
+        "message": "I am interested in this job. I can start today."
+    },
+    {
+        "id": 15,
+        "candidate_id": 10,
+        "sender": "recruiter",
+        "job_id": 10,
+        "created_at": "2023-01-01 12:05:00",
+        "message": "You can come tomorrow to our offices for an intervie!"
+    },
+    {
+        "id": 16,
+        "candidate_id": 10,
+        "sender": "recruiter",
+        "job_id": 10,
+        "created_at": "2023-01-01 12:05:00",
+        "message": "You can come tomorrow to our offices for an intervie!"
+    },
+    {
+        "id": 17,
+        "candidate_id": 10,
+        "sender": "candidate",
+        "job_id": 10,
+        "created_at": "2023-01-01 12:06:00",
+        "message": "See you tomorrow. Thank you"
+    }
+]}

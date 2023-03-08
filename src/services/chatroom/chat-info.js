@@ -28,19 +28,19 @@ const ListRow = styled(List.Section)`
 
 export const ChatInfo = ({ client = {} }) => {
   const {
-    name = "Jane Smith",
+    name = "Jarno Trulli",
     photo = ["https://xsgames.co/randomusers/assets/avatars/male/44.jpg"],
-    lastMessage = "Hello ,how are you?",
-    time = "1 hour",
+    lastMessage = "Hi, I am interested in this job",
+    time = "1 hr",
   } = client;
 
   return (
     <ChatCard elevation={5}>
       <ListRow>
         <>
-          <View style={{ paddingLeft: 10 }} />
+          <View style={{ paddingLeft: 5 }} />
           <Name> {name} </Name>
-          <View style={{ paddingLeft: 10 }} />
+          <View style={{ paddingLeft: 5 }} />
           <Image
             style={{ width: 35, height: 35 }}
             variant="image"
@@ -48,9 +48,9 @@ export const ChatInfo = ({ client = {} }) => {
               uri: photo[0],
             }}
           />
-          <View style={{ paddingLeft: 10 }} />
+          <View style={{ paddingLeft: 5 }} />
           <Message>{lastMessage}</Message>
-          <View style={{ paddingLeft: 25 }} />
+          <View style={{ paddingLeft: 10 }} />
           <Message>{time}</Message>
         </>
       </ListRow>
