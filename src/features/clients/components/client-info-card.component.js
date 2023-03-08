@@ -28,9 +28,9 @@ const ListRow = styled(List.Section)`
 
 export const CilentInfoCard = ({ client = {} }) => {
   const {
-    name = "Data Analyst",
-    photo = ["https://xsgames.co/randomusers/assets/avatars/male/9.jpg"],
-    companyName = "Amazon",
+    name = "Web Developer",
+    photo = ["https://xsgames.co/randomusers/assets/avatars/male/2.jpg"],
+    companyName = "Google",
     chatRoom = "https://img.icons8.com/material-outlined/24/null/filled-chat.png",
     submitForApproval = "https://img.icons8.com/material-outlined/24/null/submit-for-approval.png",
   } = client;

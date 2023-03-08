@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unstable-nested-components */
+/* eslint-disable react-native/no-inline-styles */
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
@@ -34,7 +36,7 @@ const Profiles = () => (
       <>
         <AvatarContainer>
           <Avatar.Icon size={100} icon="human" backgroundColor="#2182BD" />
-          <View style={{ paddingTop: 5 }} />
+          <View />
           <Text variant="label" style={{ padding: 5 }}>
             John Jason
           </Text>
@@ -74,7 +76,7 @@ const Profiles = () => (
   </SafeArea>
 );
 
-/*
+/* Setting page has changed to Profile page
 const Settings = () => (
   <SafeArea>
     <Text>Settings</Text>

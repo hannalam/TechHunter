@@ -20,9 +20,7 @@ export const Favourite = ({ job }) => {
   return (
     <FavouriteButton
       onPress={() =>
-        !isFavourite
-          ? addToFavourites(job)
-          : removeFromFavourites(job)
+        !isFavourite ? addToFavourites(job) : removeFromFavourites(job)
       }
     >
       <AntDesign
