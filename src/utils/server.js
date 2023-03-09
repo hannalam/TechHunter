@@ -27,13 +27,23 @@ function getRandomCompany() {
         "Nvidia",
     ];
 
-    return Math.floor(Math.random() * companyList.length);
+    return companyList[Math.floor(Math.random() * companyList.length)];
 }
 
-export const getCandidate = (index) => {
+function getCandidate(index) {
     return {
-        name: Candidates[index].name,
+        name: Candidates.candidates[index].name,
         photo: getRandomCandidatePhoto(),
         company: getRandomCompany(),
     };
+}
+
+export const getCandidates = () => {
+    const candidateList = [];
+
+    for (let i = 0; i < 10; i++) {
+        candidateList.push(getCandidate(i));
+    }
+
+    return candidateList;
 };
