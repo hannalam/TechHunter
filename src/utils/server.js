@@ -30,6 +30,20 @@ function getRandomCompany() {
     return companyList[Math.floor(Math.random() * companyList.length)];
 }
 
+function getRandomTime() {
+    const randomTimeIndex = Math.floor(Math.random() * 2);
+    const randomTime = randomTimeIndex === 0 ? "hr" : "mins";
+
+    switch (randomTime) {
+        case "hr":
+            const randomHourNum = Math.floor(Math.random() * 24);
+            return `${randomHourNum} hrs`;
+        case "mins":
+            const randomMinNum = Math.floor(Math.random() * 60);
+            return `${randomMinNum} mins`;
+    }
+}
+
 function getCandidate(index) {
     return {
         name: Candidates.candidates[index].name,
@@ -38,12 +52,34 @@ function getCandidate(index) {
     };
 }
 
+function getChat(index) {
+    const randomName =
+        Candidates.candidates[Math.floor(Math.random() * 10)].name;
+
+    return {
+        name: randomName,
+        photo: getRandomCandidatePhoto(),
+        message: Chats.chats[index].message,
+        time: getRandomTime(),
+    };
+}
+
 export const getCandidates = () => {
     const candidateList = [];
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < Candidates.candidates.length; i++) {
         candidateList.push(getCandidate(i));
     }
 
     return candidateList;
+};
+
+export const getChats = () => {
+    const chatList = [];
+
+    for (let i = 0; i < Chats.chats.length; i++) {
+        chatList.push(getChat(i));
+    }
+
+    return chatList;
 };
