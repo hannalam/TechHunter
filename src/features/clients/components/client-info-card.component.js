@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react-native/no-inline-styles */
 import React from "react";
 import styled from "styled-components";
@@ -6,68 +7,68 @@ import { Card, List } from "react-native-paper";
 import { Favourite } from "../../../services/favourites/favourite.component";
 
 const CilentCard = styled(Card)`
-  background-color: white;
-  margin-bottom: 10px;
+    background-color: white;
+    margin-bottom: 10px;
 `;
 
 const Title = styled(Text)`
-  color: black;
-  align-items: center;
+    color: black;
+    align-items: center;
 `;
 
 const CompanyName = styled(Text)`
-  color: black;
-  align-items: center;
+    color: black;
+    align-items: center;
 `;
 
 const ListRow = styled(List.Section)`
-  flex-direction: row;
-  padding-top: 5px;
-  padding-bottom: 5px;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
 `;
 
 export const CilentInfoCard = ({ client = {} }) => {
-  const {
-    name = "Web Developer",
-    photo = ["https://xsgames.co/randomusers/assets/avatars/male/2.jpg"],
-    companyName = "Google",
-    chatRoom = "https://img.icons8.com/material-outlined/24/null/filled-chat.png",
-    submitForApproval = "https://img.icons8.com/material-outlined/24/null/submit-for-approval.png",
-  } = client;
+    const {
+        name = "Web Developer",
+        photo = ["https://xsgames.co/randomusers/assets/avatars/male/2.jpg"],
+        companyName = "Google",
+        chatRoom = "https://img.icons8.com/material-outlined/24/null/filled-chat.png",
+        submitForApproval = "https://img.icons8.com/material-outlined/24/null/submit-for-approval.png",
+    } = client;
 
-  return (
-    <CilentCard elevation={5}>
-      <ListRow>
-        <>
-          <Title> {name} </Title>
-          <Favourite client={client} />
-          <Image
-            style={{ width: 35, height: 35 }}
-            variant="image"
-            source={{
-              uri: photo[0],
-            }}
-          />
-          <View style={{ paddingLeft: 10 }} />
-          <CompanyName>{companyName}</CompanyName>
-          <View style={{ paddingLeft: 20 }} />
-          <Image
-            style={{ width: 30, height: 30 }}
-            variant="submit For Approval"
-            source={{
-              uri: submitForApproval,
-            }}
-          />
-          <View style={{ paddingLeft: 10 }} />
-          <Image
-            style={{ width: 30, height: 30 }}
-            variant="chatRoom"
-            source={{
-              uri: chatRoom,
-            }}
-          />
-        </>
-      </ListRow>
-    </CilentCard>
-  );
+    return (
+        <CilentCard elevation={5}>
+            <ListRow>
+                <>
+                    <Title> {name} </Title>
+                    <Favourite client={client} />
+                    <Image
+                        style={{ width: 35, height: 35 }}
+                        variant="image"
+                        source={{
+                            uri: photo[0],
+                        }}
+                    />
+                    <View style={{ paddingLeft: 10 }} />
+                    <CompanyName>{companyName}</CompanyName>
+                    <View style={{ paddingLeft: 20 }} />
+                    <Image
+                        style={{ width: 30, height: 30 }}
+                        variant="submit For Approval"
+                        source={{
+                            uri: submitForApproval,
+                        }}
+                    />
+                    <View style={{ paddingLeft: 10 }} />
+                    <Image
+                        style={{ width: 30, height: 30 }}
+                        variant="chatRoom"
+                        source={{
+                            uri: chatRoom,
+                        }}
+                    />
+                </>
+            </ListRow>
+        </CilentCard>
+    );
 };
