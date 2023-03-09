@@ -14,7 +14,7 @@ const ChatCard = styled(Card)`
 
 const Name = styled(Text)`
     color: black;
-    align-items: center;
+    width: 100px;
 `;
 
 const Message = styled(Text)`

@@ -16,11 +16,13 @@ const CilentCard = styled(Card)`
 const Title = styled(Text)`
     color: black;
     align-items: center;
+    width: 80px;
 `;
 
 const CompanyName = styled(Text)`
     color: black;
     align-items: center;
+    width: 65px;
 `;
 
 const ListRow = styled(List.Section)`
@@ -41,6 +43,7 @@ export const CilentInfoCard = () => {
                 <CilentCard elevation={5}>
                     <ListRow>
                         <>
+                            <View style={{ paddingLeft: 10 }} />
                             <Title> {candidate.name} </Title>
                             <Favourite client={candidate} />
                             <Image
